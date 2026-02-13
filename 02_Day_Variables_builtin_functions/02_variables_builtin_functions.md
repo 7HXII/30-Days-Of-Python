@@ -37,6 +37,8 @@ In Python we have lots of built-in functions. Built-in functions are globally av
 
 ![Built-in Functions](../images/builtin-functions.png)
 
+
+
 Let us open the Python shell and start using some of the most common built-in functions.
 
 ![Built-in functions](../images/builtin-functions_practice.png)
