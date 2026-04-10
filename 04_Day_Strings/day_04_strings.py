@@ -196,6 +196,117 @@ result = "the area of a circle with {} is {}".format(str(radius), str(area))
 print(result)
 
 #index(): returns the lowest index of a substring, additional aruments indicate starting  and ending index(default 0 and string length -1)if the substring is not found it will show a valueError
+ai_summit_2027 = "geneva"
+sub_string = 'va'
+print(ai_summit_2027.index(sub_string))# error because its out of bound
+
+
+#rindex(): it gives the highest index of the sub_string, the additional arguments with coma denotes start and ending or index by default that is 0 and string length -1
+ai_summit_2027 = "geneva"
+sub_string = "v"
+print(ai_summit_2027.rindex(sub_string))
+print(ai_summit_2027.rindex("ne"))
+
+#isalnum(): checks alphanumeric character
+
+ai_summit_2027 = "27geneva"
+print(ai_summit_2027.isalnum())
+ai_summit_2027 = "global leaders gather"
+print(ai_summit_2027.isalnum())#space not allowed because its not a alphanumeric.
+
+#isalpha(): checks if all string elements are alpha characters(a-z and A-Z)
+
+ai_summit_2027 = "tech talks by tech ceos"
+print(ai_summit_2027.isalpha())# false 'cause space is not allowed.
+num = "123"
+print(num.isalpha())#false 'cause its not alphabets
+
+#isdecimal():checks if all characters in a string are decimal(0-9)
+ai_summit_2027 = 'france pm as chief guest'
+print(ai_summit_2027.isdecimal())
+num_str = "123"
+print(num_str.isdecimal())
+num_str = "1 23"
+print(num_str.isdecimal())
+
+#isdigit(): check if the characters in string are numbers(0-9) or unicode characters for numbers.
+num = "\u00B2"
+print(num.isdigit())
+num = "hello world"
+print(num.isdigit())#false
+
+#isnumeric(): checks if all character in a string are numbers or number related characters , its like isdigit() that accepts more symbols.
+
+num = '20'
+print(num.isnumeric())
+num = '20.4'
+print(num.isnumeric())#false 'cause it has decimal
+
+#isidentifier(): checks for a valid identifier , it checks if a string is a valid variable name.
+
+house = '20floorpenthouse'
+print(house.isidentifier())
+
+house = 'penthouse_london' 
+print(house.isidentifier())
+
+#islower(): checks if all alphabet characters in the string are in lowercase
+
+bbc = 'ali ayatohlla khamenei shot dead by us_israeli'
+print(bbc.islower())#true
+
+bbc = 'Ali Ayatohlla Khamenei shot dead by us_israeli'
+print(bbc.islower())
+
+#isuper(): checks if all alphabet charaters in the string are uppercase.
+
+bbc = 'INLFATION'
+print(bbc.isupper())
+
+#join():returns a concatenated string
+fruits = ['apple','mango','banana']
+result = ' '.join(result)
+print(result)
+
+#strip(): removes all given characters starting from the begining and end of the string 
+word = "python program"
+print(word.strip('norg'))
+
+#replace():replaces substrin with a given string
+
+word = "python code"
+print(word.replace("great code"))
+
+#split(): split the string , using given string or space as a separator
+
+word = "spoky action"
+print(word.split())
+
+#tittle():returns a tittle cased string 
+
+word = "john bell ireland"
+print(word.tittle())
+
+#swapcase(): converts all uppercase characters to lowercase and all lowercase characters to uppercase
+
+word = "python code is fun"
+print(word.swapcase())
+
+#startwith():check if string starts with the specified string
+
+word = "python is amazing"
+print(word.startswith('python'))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
