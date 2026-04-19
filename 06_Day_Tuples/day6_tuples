@@ -1,0 +1,67 @@
+#tuple: collection of data types whihc is ordered and not changeable. tuples are enclosed in round brackets().
+#creating a tuple:empty tuple
+
+empty_tuple = tuple()
+
+tple =('item1', 'item2','item3')
+
+#tuple length: we use len() method to get the length of a tuple.
+
+tple =('item1', 'item2','item3')
+print(len(tple))
+
+#accessing tuple items: we use postive and negative indexing like list data types.
+
+#positive indexing
+fruits = ('apple', 'mango', 'banana','guava')
+first_item = fruits[0]
+print(first_item)
+
+#negative indexing : means start indexing or counting from end of the tuple.
+
+alphabet = ('a', 'b','c', 'd', 'e')
+fifth_alpha = alphabet[-5]
+print(fifth_alpha)
+
+#slicing tuples: we can slice a tuple by using the method of start and stop by specifying range of indexes.
+
+#range of positive indexes
+
+names = ('rajan', 'dennis', 'bruce', 'clarke)')
+all_names = names[0:4]
+print(all_names)
+
+#range of negative indexes
+
+names = ('rajan', 'dennis', 'bruce', 'clarke)')
+all_names = names[-3:2]
+print(all_names)
+
+#changing tuples to list: we can change tuples to list and vice versa
+
+grade = ( 'A', 'B', 'C', 'D','E')
+grade = list(grade)
+grade[2] = 'B+'
+print(grade)
+
+grade = tuple(grade)
+print(grade)
+
+#checking an item in a tuple : we an check if an item exists or not in a tuple using _in_, it  returns in boolean form(true or false)
+
+grade = ( 'A', 'B', 'C', 'D','E')
+print('A' in grade) #True
+print('X' in grade) #false
+
+#joining tuples: we can join two or more tuples using + operator
+
+car = ('bmw', 'rolls royce', 'mercedes', 'jaguar')
+
+owner = ('john', 'steve','walker', 'thomas')
+car_owner = car + owner
+print(car_owner)
+
+#deleting tuples: it is not possible to remove elements of tuple but we can delete the entire tuple using _del_ method
+
+car = ('bmw', 'rolls royce', 'mercedes', 'jaguar')
+del car
