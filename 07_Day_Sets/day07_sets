@@ -1,0 +1,103 @@
+#set is a colletion of unordered or un-indexed undistinct items.
+
+#creating a set:we use set() function.
+
+fruits = {'banana', 'plum', 'pineapple', 'lemon'}
+print(fruits)
+
+#getting set's length
+
+#we use len() method to find the. length of a set.
+
+fruits = {'banana', 'plum', 'pineapple', 'lemon'}
+print(len(fruits))
+
+#accessing item in a set: we use loops to access items.
+
+#cheking an item : we use membership operator _in_ to check if the item exists.
+
+fruits = { 'banana', 'peach', 'mango', 'guava'}
+print("mango" in fruits)
+
+#adding items to a set: we cannot change the items once the set is created but we can add items_ we can use _add()_ function to add one item.
+
+fruits = {'pineapple', 'mango', 'orange', }
+fruits.add('watermelon')
+print(fruits)
+
+#we use _update()_ function to add multiple items to a set. it takes a list argument.
+
+fruits ={'apple', 'orange','lemon','pear'}
+season = {'december', 'january', ' may', 'june'}
+fruits.update(season)
+print(fruits)
+
+#remove items from a set: we can use remove_() method to remove the items from a set.check items before removing because if the item doesnot exist it will cause error but we can use discard()_ method , it will not cause error.
+
+fruits = {'peach', 'apple', 'pear', 'plum'}
+fruits.remove('apple')
+print(fruits)
+
+#the pop()_ method renoes a random item from a list and it returns the reoved item.
+
+fruits = {'peach', 'apple', 'pear', 'plum'}
+fruits.pop()
+print(fruits)
+removed_item = fruits.pop() # to check the removed item.
+print(removed_item)
+fruits.clear() # to empty the set
+print(fruits)
+del fruits #deleting the set
+
+
+#we can convert list to set and vice versa: conversting list to set removes duplicates and only unique item will be reserved.
+
+fruits = ['litchi', 'grapes', 'jackfruit', 'plum']
+set = set(fruits) #converting list to set.
+print(set)
+
+fruits = {'litchi', 'grapes', 'jackfruit', 'plum'}
+list = list(fruits) # converting set to list
+print(list)
+
+#joining set: we can hjoin two sets using the union()_ or update_() method or using this symbol: _|_ 
+#union(): this method returns a new set.
+#update(): this method inserts a set into a given a set
+
+fruits = {'litchi', 'grapes', 'jackfruit', 'plum'}
+alcohol = {'whisky', 'rum', 'gin', 'wine'}
+print(fruits.union(alcohol))
+
+fruits.update(alcohol)
+print(fruits)
+
+#finding intersecting items: intersection returns a set of items which ae in both the sets or using _&_ symbol.
+
+natural_number = {0, 1, 2, 3, 4, 5, 6, 7, 8}
+even_number = {2, 4, 6, 8}
+print(natural_number.intersection(even_number))
+
+#checking subset or super set: a set can be subset or super set of other sets.
+
+natural_number = {0, 1, 2, 3, 4, 5, 6, 7, 8}
+even_number = {2, 4, 6, 8}
+print(natural_number.issubset(even_number))# false 'cause its a superset
+print(even_number.issubset(natural_number))
+
+#checking the difference of between two sets: we can use this symbol: _-_  or difference keyword.
+
+natural_number = {0, 1, 2, 3, 4, 5, 6, 7, 8}
+even_number = {2, 4, 6, 8}
+print(natural_number.difference(even_number))
+
+#finding the symmetric difference between two sets: it means that geting all the elements from both sides except the same elements present in both sets.
+
+natural_number = {0, 1, 2, 3, 4, 5, 6, 7, 8}
+even_number = {2, 4, 6, 8, 10, 12}
+print(natural_number.symmetric_difference(even_number))
+
+#joing sets: if two sets do not have a common elements, its called disjoint set. we can check using _isdisjoint()_ method.
+
+name = {'john', 'james', 'charles'}
+age = {20, 30, 40, 50}
+print(name.isdisjoint(age))

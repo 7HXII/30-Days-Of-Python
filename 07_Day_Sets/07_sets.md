@@ -385,8 +385,7 @@ st2.isdisjoint(st1) # False
 **Example:**
 
 ```py
-even_numbers = {0, 2, 4 ,6, 8}
-odd_numbers = {1, 3, 5, 7, 9}
+ 
 even_numbers.isdisjoint(odd_numbers) # True, because no common item
 
 python = {'p', 'y', 't', 'h', 'o','n'}
